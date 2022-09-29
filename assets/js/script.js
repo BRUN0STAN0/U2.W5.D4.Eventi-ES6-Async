@@ -50,8 +50,11 @@ let x = document.getElementsByClassName("x")[0];
 let c = document.getElementsByClassName("c")[0];
 
 
+
+
+
 function addTask(e) {
-    if (e.keyCode == 13) {
+    if (e.key == "Enter") {
         listaImpegni.innerHTML += `
         <div onclick="deleteTask(this)" class="task">${valueTask.value}
         <span class="x">X</span></div>        
@@ -60,9 +63,11 @@ function addTask(e) {
     }
 }
 
+
 function clearTask() {
     listaImpegni.remove();
 }
+
 
 function deleteTask(e) {
     e.remove();
