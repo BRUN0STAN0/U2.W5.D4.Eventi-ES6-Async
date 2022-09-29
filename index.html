@@ -8,6 +8,50 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <div class="menu">
+        <div class="drop-down-icon" onclick="openMenu()">≡</div>
+        <div class="drop-down-menu">
+          <div class="home">Home</div>
+          <div class="about">About</div>
+          <div class="news">News</div>
+          <div class="contact">Contact</div>
+        </div>
+      </div>
+      <div class="pulsantiera">
+        <button onclick="toggle('bold')"><b>G</b></button>
+        <button onclick="toggle('italic')"><i>C</i></button>
+        <button onclick="toggle('underline')"><u>S</u></button>
+        <button onclick="toggle('del')"><del>abc</del></button>
+        <input id="color" onclick="colora()" type="color" />
+        <select id="select" onclick="fontSize()">
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+        </select>
+      </div>
+      <div class="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi fugiat voluptatibus labore! Consequatur possimus vel doloribus quae quas, necessitatibus itaque labore, atque,
+        dolorum doloremque inventore praesentium sit reiciendis ducimus! Laboriosam harum odio quasi obcaecati eligendi alias cum earum id nostrum accusamus amet, nam et, ad quis voluptatibus magnam
+        maiores dolore doloribus? Quas unde odio, exercitationem velit labore quaerat eveniet. Quae accusamus, suscipit odit tempore, numquam esse voluptates amet cum quaerat quos modi. Veritatis ipsa
+        hic obcaecati sequi neque, quos molestias, fugit sapiente voluptatibus, distinctio vel unde blanditiis. Sapiente, corrupti! Ducimus, adipisci, officia sint a quae ullam quasi optio nisi
+        blanditiis nemo et laborum sit eius expedita, pariatur cupiditate quaerat earum enim dicta facilis culpa sequi exercitationem? Atque, ratione mollitia. Labore provident quisquam, beatae
+      </div>
+      <div class="input-field">
+        <input onkeydown="addTask(event)" class="add-task" type="text" placeholder="inserisci un nuovo impegno" />
+        <span onclick="clearTask()" class="c">C</span>
+      </div>
+      <div class="lista-impegni"></div>
+    </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
